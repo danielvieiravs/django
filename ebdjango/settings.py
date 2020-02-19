@@ -25,7 +25,8 @@ SECRET_KEY = '52npabfu)qcx(k#f4a)-b*yrbmz7%0#tulj#^tvs+p_th^c&ju'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-dev.b2tpnj7xc5.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['django-dev.b2tpnj7xc5.us-west-2.elasticbeanstalk.com',
+                 'localhost']
 
 
 # Application definition
@@ -37,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'import_export',
+    'daterange_filter',
+
+    'flats',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +125,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
