@@ -19,5 +19,5 @@ from django.urls import path
 admin.site.site_header = 'iRoom-UK'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
 ]
