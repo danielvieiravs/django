@@ -18,7 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-admin.site.site_header = 'iRoom-UK'
+admin.site.site_header = 'Concept-C'
 
 urlpatterns = [
     path('', admin.site.urls),
