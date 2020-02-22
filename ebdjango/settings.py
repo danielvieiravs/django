@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'aalnrtgjnspy4j',
         'USER': 'iroom',
         'PASSWORD': 'iroomiroom',
-        'HOST': 'localhost',
+        'HOST': 'aalnrtgjnspy4j.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
