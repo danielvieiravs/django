@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'ebdjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aalnrtgjnspy4j',
+        'NAME': 'postgres',
         'USER': 'iroom',
         'PASSWORD': 'iroomiroom',
         'HOST': 'aalnrtgjnspy4j.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
