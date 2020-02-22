@@ -4,8 +4,8 @@ from django.db import models
 class Photo(models.Model):
     flat = models.ForeignKey(
         'flats.Flat', null=True, blank=True, on_delete=models.SET_NULL)
-    name = models.CharField(max_length=255)
-    file = models.FileField(upload_to="media_items")
+    name = models.CharField(max_length=255, null=True, blank=True)
+    file = models.FileField(null=True, blank=True)
 
 
 class Flat(models.Model):
@@ -23,4 +23,4 @@ class Flat(models.Model):
     length = models.CharField(max_length=255, null=True, blank=True)
     extra = models.CharField(max_length=255, null=True, blank=True)
     profile = models.CharField(max_length=255, null=True, blank=True)
-    photos_url = models.URLField(max_length = 200) 
+    photos_url = models.URLField(max_length = 200, null=True, blank=True) 
