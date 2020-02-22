@@ -9,7 +9,7 @@ class Photo(models.Model):
 
 
 class Flat(models.Model):
-    date_to_rent = models.DateField(null=True, blank=True)
+    available_from = models.DateField(null=True, blank=True)
     property = models.CharField(max_length=50, null=True, blank=True)
     post_code = models.CharField(max_length=255)
     area = models.CharField(max_length=255, null=True, blank=True)
