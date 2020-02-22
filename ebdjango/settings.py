@@ -84,11 +84,10 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'iroom',
         'PASSWORD': 'iroomiroom',
-        'HOST': 'aalnrtgjnspy4j.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
+        'HOST': 'aaz9p2zby9qk8t.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
