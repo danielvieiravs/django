@@ -25,7 +25,7 @@ SECRET_KEY = '52npabfu)qcx(k#f4a)-b*yrbmz7%0#tulj#^tvs+p_th^c&ju'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['iRoom-UK-dev.b2tpnj7xc5.us-west-2.elasticbeanstalk.com',
+ALLOWED_HOSTS = ['concept-c.us-west-2.elasticbeanstalk.com',
                  'localhost', '169.254.169.254']
 
 
