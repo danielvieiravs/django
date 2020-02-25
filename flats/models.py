@@ -18,7 +18,7 @@ class Flat(models.Model):
     price_two = models.DecimalField(max_digits=6, decimal_places=2)
     bills = models.CharField(max_length=255, null=True, blank=True)
     licensor = models.CharField(max_length=255, null=True, blank=True)
-    number_bedrooms = models.IntegerField(default=0)
+    n_b = models.IntegerField(default=0)
     deposit_rent = models.CharField(max_length=255, null=True, blank=True)
     length = models.CharField(max_length=255, null=True, blank=True)
     extra = models.CharField(max_length=255, null=True, blank=True)
