@@ -12,7 +12,8 @@ class PhotoInline(admin.TabularInline):
 
 class FlatAdmin(ImportExportModelAdmin):
     list_display = ('available_from', 'licensor', 'property', 'post_code',
-                    'area', 'n_b', 'price_one', 'price_two')
+                    'area', 'n_b', 'price_one', 'price_two',
+                    'upfront', 'bills', 'min_length')
     list_filter = ('area', ('available_from', DateRangeFilter), 'licensor',
                     'property', 'post_code', 'price_one', 'price_two',
                     'n_b')
