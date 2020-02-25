@@ -21,7 +21,6 @@ class Flat(models.Model):
     min_length = models.CharField(max_length=255, null=True, blank=True)
     licensor = models.CharField(max_length=255, null=True, blank=True)
     n_b = models.IntegerField(default=0)
-    number_bedrooms = models.IntegerField(default=0)
     deposit_rent = models.CharField(max_length=255, null=True, blank=True)
     extra = models.CharField(max_length=255, null=True, blank=True)
     profile = models.CharField(max_length=255, null=True, blank=True)
