@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'iroom',
         'PASSWORD': 'iroomiroom',
-        'HOST': 'aaz9p2zby9qk8t.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
+        'HOST': 'aa19lv4fvphooq1.cp6iqybffg7y.us-west-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
