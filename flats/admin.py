@@ -13,8 +13,8 @@ class FlatAdmin(ImportExportModelAdmin):
     list_display = ('available_from', 'licensor', 'property', 'post_code',
                     'area', 'n_b', 'price_one', 'price_two', 'bills',
                     'min_length')
-    list_filter = ('area', 'available_from', 'licensor', 'property',
-                    'post_code', 'price_one', 'price_two', 'n_b')
+    list_filter = ('area', 'licensor', 'property', 'price_one', 'price_two',
+                   'available_from', 'n_b')
     search_fields = ('licensor', 'available_from', 'property', 'area', 'n_b',
                      'price_one', 'price_two', 'post_code')
     inlines = [
