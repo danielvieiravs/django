@@ -18,7 +18,8 @@ class Flat(models.Model):
     price_one = models.CharField(max_length=50, null=True, blank=True)
     price_two = models.CharField(max_length=50, null=True, blank=True)
     bills = models.CharField(max_length=50, null=True, blank=True)
-    min_length = models.CharField(max_length=255, null=True, blank=True)
+    min_length = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="upfront")
     licensor = models.CharField(max_length=255, null=True, blank=True)
     n_b = models.CharField(max_length=50, null=True, blank=True)
     deposit_rent = models.CharField(max_length=255, null=True, blank=True)
