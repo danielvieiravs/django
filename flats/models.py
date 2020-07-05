@@ -23,6 +23,7 @@ class Flat(models.Model):
     licensor = models.CharField(max_length=255, null=True, blank=True)
     n_b = models.CharField(max_length=50, null=True, blank=True)
     deposit_rent = models.CharField(max_length=255, null=True, blank=True)
-    extra = models.CharField(max_length=255, null=True, blank=True)
+    extra = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="min length")
     profile = models.CharField(max_length=255, null=True, blank=True)
     photos_url = models.URLField(max_length = 200, null=True, blank=True) 
