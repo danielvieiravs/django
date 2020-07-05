@@ -9,7 +9,8 @@ class Photo(models.Model):
 
 
 class Flat(models.Model):
-    available_from = models.CharField(max_length=50, null=True, blank=True)
+    available_from = models.CharField(
+        max_length=50, null=True, blank=True, verbose_name="available")
     property = models.CharField(max_length=50, null=True, blank=True)
     post_code = models.CharField(max_length=255)
     area = models.CharField(max_length=255, null=True, blank=True)

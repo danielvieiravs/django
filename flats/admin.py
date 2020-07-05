@@ -12,9 +12,9 @@ class PhotoInline(admin.TabularInline):
     extra = 0
 
 class FlatAdmin(ImportExportModelAdmin):
-    list_display = ('available_from', 'licensor', 'property', 'post_code',
-                    'area', 'n_b', 'price_one', 'price_two', 'bills',
-                    'min_length')
+    list_display = ('available_from', 'property', 'post_code', 'room',
+                    'area', 'price_one', 'price_two', 'bills',
+                    'licensor', 'min_length')
     list_filter = ('area', 'licensor', 'property', 'price_one', 'price_two',
                    'available_from', 'n_b')
     search_fields = ('licensor', 'available_from', 'property', 'area', 'n_b',
